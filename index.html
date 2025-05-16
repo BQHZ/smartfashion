@@ -1,0 +1,80 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashion E-Commerce</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    .product-card img {
+      width: 100%;
+      display: block;
+    }
+    .btn-try-on {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      z-index: 10;
+    }
+    .btn-3dview {
+      position: absolute;
+      top: 48px;    /* 8px (jarak atas) + ~32px (tinggi tombol) + 8px margin */
+      right: 8px;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body class="p-3">
+  <div class="container">
+    <h1 class="mb-4">Shop Our Collection</h1>
+    <div class="row gy-3">
+      
+      <!-- Produk 1 -->
+      <div class="col-12 col-sm-6">
+        <div class="product-card">
+          <img src="cl.png" alt="Denim Jacket" />
+          
+          <!-- Tombol Try On -->
+          <a href="https://wanna-clothes.ar.wanna.fashion/?mode=vto&showonboarding=3d&modelid=WNCLO01&startwithid=WNCLO01" class="btn btn-primary btn-try-on">Try On</a>
+          <!-- Tombol 3D View -->
+          <a href="https://wanna-clothes.ar.wanna.fashion/?mode=3d&showonboarding=3d&modelid=WNCLO01" class="btn btn-secondary btn-3dview">3D View</a>
+          
+          <div class="p-2">
+            <h5 class="mb-1">Culture Jacket</h5>
+            <p class="mb-0 text-muted">IDR 499.000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produk 2 -->
+      <div class="col-12 col-sm-6">
+        <div class="product-card">
+          <img src="wtch.png" alt="Leather Boots" />
+          
+          <a href="https://wanna-watches.ar.wanna.fashion/?modelid=IW371611-O&wristmeasurement=true&showhint=wristmeasurement&startwithid=IW371611-O&mode=vtol" class="btn btn-primary btn-try-on">Try On</a>
+          <a href="https://wanna-watches.ar.wanna.fashion/?modelid=IW371611-O&wristmeasurement=true&showhint=wristmeasurement" class="btn btn-secondary btn-3dview">3D View</a>
+          
+          <div class="p-2">
+            <h5 class="mb-1">Rolex</h5>
+            <p class="mb-0 text-muted">IDR 799.000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tambahkan produk lain di sini dengan pola yang sama -->
+
+    </div>
+  </div>
+</body>
+</html>
