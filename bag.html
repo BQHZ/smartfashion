@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Detail Produk</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    /* Optional: mengunci tinggi gambar detail */
+    .product-img {
+      width: 100%;
+      height: 300px;       /* sesuaikan tinggi */
+      object-fit: cover;
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body class="bg-light">
+
+  <nav class="navbar navbar-light  shadow-sm" style="background-color: #213448;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">
+        <img src="logo_gc.png" alt="Logo" width="32" height="32">
+      </a>
+
+        <!-- Tombol Kembali di pojok kanan -->
+     <a href="javascript:history.back()"
+       class="btn btn-outline-secondary btn-sm ms-auto p-1">
+      <i class="bi bi-arrow-le  ft"></i>
+    </a>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+    <!-- Div 1: Gambar produk -->
+    <div class="mb-4">
+      <img src="bag.png" 
+           alt="Nama Produk" 
+           class="product-img rounded">
+    </div>
+
+    <!-- Div 2: Info dan tombol -->
+    <div class="mb-4 p-3 text-white rounded shadow-sm" style="background-color: #304862;">
+      <h3 class="mb-2">Hermes Bag</h3>
+      <p class="text-white mb-3">Terjual: <strong>10</strong></p>
+      <div class="d-flex gap-2">
+        <a href="#" class="btn flex-fill" style="color: white; background-color: #213448; box-shadow: 2px 2px 5px black;">Check-out</a>
+        <a href="https://wanna-bags.ar.wanna.fashion/?mode=vto&showonboarding=3d&startwithid=6W2B0R15UHFWU4" class="btn btn-outline-secondary flex-fill" style="color: rgb(0, 0, 0); background-color: whitesmoke; box-shadow: 2px 2px 5px black;">Try-on</a>
+      </div>
+    </div>
+
+    <!-- Div 3: Deskripsi -->
+    <div class="p-3 bg-white rounded shadow-sm" >
+      <h5 class="mb-3">Deskripsi Produk</h5>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. 
+        Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. 
+        Praesent mauris. Fusce nec tellus sed augue semper porta. 
+        Mauris massa. Vestibulum lacinia arcu eget nulla.
+      </p>
+      <p>
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+        Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. 
+        Curabitur tortor. Pellentesque nibh. Aenean quam. 
+        In scelerisque sem at dolor.
+      </p>
+    </div>
+  </main>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</body>
+</html>
